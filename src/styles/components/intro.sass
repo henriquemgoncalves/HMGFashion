@@ -1,36 +1,36 @@
+@use '../variable'
+    
 #intro
-    margin: 2rem 0
+    margin: variable.$pad2 0
     width: 100%
     text-align: center
-    padding: 2rem
+    padding: variable.$pad2
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    gap: 1rem
-    font-family: "Forum"
+    gap: variable.$pad1
+    font-family: variable.$font-intro
 
     h3 
         font-size: 1.4rem
-        font-weight: 600
-        letter-spacing: 2px
-        color: #0e0e0e
+        font-weight: variable.$weight6
+        letter-spacing: variable.$space
+        color: variable.$h3-color
 
     .text 
         width: 60%
 
         p 
-            font-size: 1rem
-            font-weight: 500
+            font-size: variable.$pad1
+            font-weight: variable.$weight5
             font-style: italic
-            letter-spacing: 2px
-            color: #000
+            letter-spacing: variable.$space
+            color: variable.$black
 
     @media(max-width: 800px)
         padding: .5rem
 
         .text
             width: 100%
-            font-weight: 700
-
-        
+            font-weight: variable.$weight7

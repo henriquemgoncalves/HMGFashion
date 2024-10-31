@@ -1,21 +1,23 @@
+@use '../variable'
+    
 #credits
     width: 50%
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    letter-spacing: 2px
-    gap: 2rem
-    padding: 2rem 0
-    margin-bottom: 4rem
+    letter-spacing: variable.$space
+    gap: variable.$pad2
+    padding: variable.$pad2 0
+    margin-bottom: variable.$pad4
 
     h3 
         font-size: 1.3rem
-        font-weight: 600
-        color: #0e0e0e
+        font-weight: variable.$weight6
+        color: variable.$h3-color
 
     .pagination
-        font-weight: 600
+        font-weight: variable.$weight6
         text-align: center
         font-size: .8rem
 
@@ -25,44 +27,44 @@
 
         p 
             font-size: .6rem
-            font-weight: 600
+            font-weight: variable.$weight6
             padding-bottom: .5rem
             color: #919191
 
         h4 
-            font-size: 1rem
-            font-weight: 600
-            color: #000
+            font-size: variable.$pad1
+            font-weight: variable.$weight6
+            color: variable.$black
 
         .page1
             width: 100%
             display: flex
             flex-direction: row
             justify-content: center
-            gap: 3rem
+            gap: variable.$pad3
 
             .info-left
                 text-align: center
                 display: flex
                 flex-direction: column
-                gap: 5rem
+                gap: variable.$pad5
             
             .info-right
                 text-align: center
                 display: flex
                 flex-direction: column
-                gap: 5rem
+                gap: variable.$pad5
 
     @media(max-width: 800px)
         width: 80% 
 
         .pages
             .page1
-                gap: 1rem
+                gap: variable.$pad1
                 
                 .info-left,
                 .info-right
-                    gap: 3rem
+                    gap: variable.$pad3
 
 
 

@@ -1,25 +1,27 @@
+@use '../variable'
+    
 #look
     width: 100%
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    gap: 1rem
-    margin-bottom: 4rem
+    gap: variable.$pad1
+    margin-bottom: variable.$pad4
 
     h3 
         font-size: 1.3rem
-        font-weight: 600
-        letter-spacing: 2px
-        color: #0e0e0e
+        font-weight: variable.$weight6
+        letter-spacing: variable.$space
+        color: variable.$h3-color
 
     button 
         width: 330px
         height: 55px
         background-color: transparent
-        border: 1px solid #000
+        border: 1px solid variable.$black
         font-size: .9rem
-        font-weight: 600
-        color: #1f1f1f
+        font-weight: variable.$weight6
+        color: variable.$color-social
         cursor: pointer
-        letter-spacing: 2px
+        letter-spacing: variable.$space
